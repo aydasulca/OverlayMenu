@@ -148,14 +148,47 @@ nav.open ul li {
 }
 
 /*imagenes*/
-.img-box{
+.grid{
+  margin-top:20%;
+  margin-left:10%;
+}
+figure {
+  display: inline-block;
+  position: absolute;
   width: 300px;
   height: 300px;
-  left: 50%;
-  top: 50%;
+  left: 0%;
+  top: 0%;
+  margin: 0;
 }
-/*
-div .grid{
+
+.imagen {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display:inline-block;
+  overflow: hidden;
+}
+
+.img-box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  left: 0%;
+  top: 0%;
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+figure:hover .img-box{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.item{
   position: absolute;
   top: 0;
   left: 0;
@@ -163,31 +196,22 @@ div .grid{
   bottom: 0;
   z-index: 222;
 }
+span {
+  visibility: hidden;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 40px;
 
-img.img-box{
-  position: fixed;
-  width: 300px;
-  height: 300px;
-  display: inline-block;
-  left: 50%;
-  top: 50%;
 }
 
+.item:hover{
+  background-color: rgba(247, 182, 23, 0.8);
+}
 
-.grid figure{
-  width: 200px;
-  height: 0px;
-  display: inline-block;
-  position: relative;
-  left: 10%;
-  top: -80%;
+.item:hover span {
+  visibility: visible;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
 }
-div.grid{
-  position:absolute;
-  left:15%;
-  top:50%;
-  bottom:20%;
-  width:70%;
-  height:40%;
-}
-*/
